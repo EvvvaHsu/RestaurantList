@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant List</title>
+    <!-- link css files here -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f04357375e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+                        width="30" height="30" class="d-inline-block align-top" alt="好。吃">
+                    我的餐廳清單
+                </a>
+            </div>
+        </nav>
+
+        <div class="banner"></div>
+    </header>
+
+
+
+
+
+
+
+    {{!-- partial template: index.handlebars will replace this part --}}
+    {{{ body }}}
+
+
+    <!-- include javascript files here -->
+    {{!-- 要特別留意的是，因為在 Bootstrap 中會用到 popper.js，因此載入時需要留意順序， popper.js 一定要放在 Bootstrap 之前 --}}
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+
+</body>
+
+</html>
